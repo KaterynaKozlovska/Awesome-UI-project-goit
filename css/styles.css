@@ -50,28 +50,42 @@ ul {
 
 /* Button */
 .primary-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
   padding: 24px;
 
   color: var(--white-color);
-  background-color: var(--brand-color);
   font-family: inherit;
   font-size: inherit;
   font-weight: 500;
   line-height: 1.5;
+  text-transform: uppercase;
   cursor: pointer;
 
-  background-color: linear-gradient(102.3deg, #647b64 -4.62%, #66ac66 178.22%);
+  background: linear-gradient(102.3deg, #647b64 -4.62%, #66ac66 178.22%);
   box-shadow: 0px 20px 40px rgba(128, 143, 150, 0.19);
   border-radius: 2px;
   border-style: none;
 
-  transition-property: color, background-color, fill, box-shadow;
+  transition-property: color, background, box-shadow;
   transition-duration: 250ms;
 }
 
-.primary-button:hover {
+.icon-button {
+  fill: currentColor;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+}
+
+.primary-button:hover,
+.primary-button:focus {
   color: var(--brand-color);
-  background-color: var(----white-color);
+  background: var(--white-color);
+
+  box-shadow: 0px 20px 40px rgba(128, 143, 150, 0.4);
 }
 
 .secondary-button {
@@ -115,6 +129,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 112px;
 }
 
 .hero-content {
@@ -164,7 +179,7 @@ ul {
 }
 
 .advantage-text {
-  max-width: 460px;
+  width: 460px;
   margin-bottom: 40px;
 
   line-height: 1.5;
@@ -174,13 +189,52 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 72px;
+  justify-content: flex-end;
+}
+
+.advantage-item {
+  width: 288px;
+
+  transition-property: background-color, border-radius, box-shadow;
+  transition-duration: 250ms;
 }
 
 .adventage-card {
   display: block;
   max-width: 288px;
+  padding: 32px 40px;
   text-decoration: none;
 }
+
+.advantage-item:hover,
+.advantage-item:focus {
+  background-color: var(--white-color);
+  box-shadow: 0px 5.87438px 31.33px rgba(155, 148, 148, 0.17);
+  border-radius: 8px;
+}
+
+.advantage-card-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+
+  width: 48px;
+  height: 48px;
+  fill: var(--brand-color);
+  background-color: var(--white-color);
+  border-radius: 8px;
+
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+}
+
+.advantage-item:hover .advantage-card-img,
+.advantage-item:focus .advantage-card-img {
+  background-color: var(--brand-color);
+  fill: var(--white-color);
+}
+
 .advantage-card-title {
   color: var(--secondary-text-color);
   font-weight: 500;
