@@ -248,6 +248,17 @@ ul {
 }
 
 /*Features */
+.features-list {
+  display: flex;
+}
+
+.features-item {
+  padding: 64px;
+}
+.features-icon {
+  margin-bottom: 32px;
+}
+
 .features-card-title {
   color: var(--secondary-text-color);
   font-weight: 500;
