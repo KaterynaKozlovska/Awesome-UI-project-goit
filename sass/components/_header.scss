@@ -1,0 +1,38 @@
+.header {
+  padding-top: 48px;
+  padding-bottom: 32px;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.header__menu {
+  display: flex;
+  gap: 40px;
+}
+
+.header__link {
+  padding: 12px 0;
+
+  color: $secondary-text-color;
+  line-height: 1.5;
+  text-decoration: none;
+
+  transition-property: text-decoration;
+  transition-duration: 500ms;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}

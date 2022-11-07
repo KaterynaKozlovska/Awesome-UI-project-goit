@@ -5,54 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Awesome UI</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
     <header class="header">
       <div class="container">
-        <div class="header-container">
-          <nav class="header-nav">
+        <div class="header__container">
+          <nav class="header__nav">
             <a href="">
               <img src="./images/logo.svg" alt="logo" width="210" height="48" />
             </a>
-            <ul class="header-menu">
+            <ul class="header__menu">
               <li>
-                <a href="" class="link">Benefits</a>
+                <a href="" class="header__link">Benefits</a>
               </li>
               <li>
-                <a href="" class="link">Features</a>
+                <a href="" class="header__link">Features</a>
               </li>
               <li>
-                <a href="" class="link">About</a>
+                <a href="" class="header__link">About</a>
               </li>
               <li>
-                <a href="" class="link">Team</a>
+                <a href="" class="header__link">Team</a>
               </li>
             </ul>
           </nav>
-          <button type="button" class="primary-button secondary-button">Register</button>
+          <button type="button" class="button header__button">Register</button>
         </div>
       </div>
     </header>
     <main>
-      <section>
-        <div class="container hero-container">
-          <div class="hero-content">
-            <h1 class="hero-title">Awesome User Interface is what we can apply</h1>
-            <p class="hero-descr">
+      <section class="hero">
+        <div class="container hero__container">
+          <div class="hero__content">
+            <h1 class="hero__title">Awesome User Interface is what we can apply</h1>
+            <p class="hero__descr">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue et eros, pellentesque
               et. Tristique ullamcorper ac pharetra in nisi sit vivamus lorem.
             </p>
-            <button class="primary-button" type="button" class="primary-button">
+            <button class="button" type="button">
               Get started
-              <svg class="icon-button" width="24" height="24">
+              <svg width="24" height="24">
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
             </button>
@@ -65,8 +67,8 @@
           />
         </div>
       </section>
-      <section>
-        <div class="container advantage-container">
+      <section class="advantages">
+        <div class="container advantages-container">
           <div class="advantage-content">
             <h2 class="title">Advantages</h2>
             <span class="sub-title"> Our Benefits </span>
