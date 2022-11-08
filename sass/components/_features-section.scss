@@ -1,0 +1,21 @@
+.features__list {
+  display: flex;
+}
+
+.features__item {
+  padding: 64px;
+}
+.features__icon {
+  margin-bottom: 32px;
+}
+
+.features__title {
+  color: $secondary-text-color;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.features__text {
+  line-height: 1.5;
+}
