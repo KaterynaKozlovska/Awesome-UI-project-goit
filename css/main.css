@@ -10,6 +10,11 @@
           align-items: center;
 }
 
+.about__image {
+  display: block;
+  margin-bottom: 128px;
+}
+
 .advantage-card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -173,18 +178,33 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 44px;
 }
 
 .features__item {
-  padding: 64px;
+  width: 360px;
+  max-height: 338px;
+  padding: 64px 50px 59px;
+  margin-bottom: 64px;
+  fill: #647b64;
+  background-color: #fefefe;
+  border-radius: 8px;
+}
+
+.features__item--brand-color {
+  fill: #fefefe;
+  color: #fefefe;
+  background-color: #647b64;
 }
 
 .features__icon {
   margin-bottom: 32px;
+  fill: currentColor;
 }
 
 .features__title {
-  color: #333333;
+  margin-bottom: 16px;
+  color: inherit;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.5;
@@ -300,5 +320,41 @@ ul {
 .section__text {
   width: 445px;
   margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+.team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+}
+
+.team__card {
+  position: relative;
+  padding: 24px 32px;
+  background-color: #fefefe;
+  border-radius: 8px;
+}
+
+.team__title {
+  position: absolute;
+  top: 24px;
+  left: 184px;
+  color: #333333;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.team__name {
+  position: absolute;
+  top: 48px;
+  left: 184px;
+  font-size: 14px;
+  line-height: 1.57;
+}
+
+.team__citation {
+  font-style: italic;
   line-height: 1.5;
 }/*# sourceMappingURL=main.css.map */

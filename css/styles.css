@@ -1,15 +1,1 @@
 /* Our team */
-.team-title {
-  color: var(--secondary-text-color);
-  font-weight: 500;
-  line-height: 1.5;
-}
-
-.team-name {
-  font-size: 14px;
-  line-height: 1.57;
-}
-.team-citation {
-  font-style: italic;
-  line-height: 1.5;
-}

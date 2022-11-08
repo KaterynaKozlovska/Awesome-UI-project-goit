@@ -1,16 +1,32 @@
 .features__list {
   display: flex;
+  gap: 44px;
 }
 
 .features__item {
-  padding: 64px;
+  width: 360px;
+  max-height: 338px;
+  padding: 64px 50px 59px;
+  margin-bottom: 64px;
+
+  fill: $brand-color;
+  background-color: $white-color;
+  border-radius: 8px;
+}
+
+.features__item--brand-color {
+  fill: $white-color;
+  color: $white-color;
+  background-color: $brand-color;
 }
 .features__icon {
   margin-bottom: 32px;
+  fill: currentColor;
 }
 
 .features__title {
-  color: $secondary-text-color;
+  margin-bottom: 16px;
+  color: inherit;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.5;
