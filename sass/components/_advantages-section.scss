@@ -9,3 +9,11 @@
     justify-content: flex-end;
   }
 }
+
+.advantages__content {
+  max-width: 372px;
+
+  @media screen and (min-width: $tablet) {
+    width: 500px;
+  }
+}

@@ -35,6 +35,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-width: 372px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
   .advantage-card {
@@ -52,7 +54,6 @@
 }
 
 .advantage-card__item {
-  width: 288px;
   -webkit-transition-property: background-color, border-radius, -webkit-box-shadow;
   transition-property: background-color, border-radius, -webkit-box-shadow;
   transition-property: background-color, border-radius, box-shadow;
@@ -63,7 +64,6 @@
 
 .adventage-card__link {
   display: block;
-  max-width: 288px;
   padding: 32px 40px;
   text-decoration: none;
 }
@@ -141,7 +141,17 @@
   }
 }
 
+.advantages__content {
+  max-width: 372px;
+}
+@media screen and (min-width: 768px) {
+  .advantages__content {
+    width: 500px;
+  }
+}
+
 body {
+  max-width: 1200px;
   color: #4f4f4f;
   background-color: #f3f1ee;
   font-family: "Montserrat", sans-serif;
@@ -220,10 +230,11 @@ ul {
   max-width: 1200px;
   padding: 0 16px;
   margin: 0 auto;
+  outline: 1px solid red;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 420px) {
   .container {
-    width: 480px;
+    width: 420px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -294,7 +305,7 @@ ul {
 }
 
 .header {
-  padding-top: 48px;
+  padding-top: 32px;
   padding-bottom: 32px;
 }
 
@@ -321,6 +332,11 @@ ul {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+@media screen and (min-width: 420px) {
+  .header__nav {
+    gap: 122px;
+  }
 }
 
 .header__burger-menu {
@@ -383,25 +399,43 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 112px;
+  padding-top: 108px;
+  padding-bottom: 80px;
+}
+@media screen and (min-width: 768px) {
+  .hero__container {
+    font-size: 24px;
+  }
 }
 
 .hero__content {
-  width: 500px;
+  max-width: 372px;
+}
+@media screen and (min-width: 768px) {
+  .hero__content {
+    width: 500px;
+  }
 }
 
 .hero__title {
-  margin-bottom: 24px;
+  margin-bottom: 40px;
   color: #333333;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 32px;
   line-height: 1.33;
   text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
 }
 
 .hero__descr {
   margin-bottom: 40px;
   line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 
 .hero__image {
@@ -491,7 +525,7 @@ ul {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 420px) {
   .mobile-menu__link {
     font-size: 40px;
   }
@@ -519,7 +553,7 @@ ul {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 420px) {
   .mobile-menu__tel {
     font-size: 34px;
   }
@@ -537,7 +571,7 @@ ul {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 420px) {
   .mobile-menu__mail {
     font-size: 24px;
   }
@@ -567,7 +601,7 @@ ul {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 420px) {
   .mobile-menu__social-link {
     font-size: 18px;
   }
@@ -577,10 +611,11 @@ ul {
 }
 
 .section__title {
+  padding-top: 16px;
   margin-bottom: 8px;
   color: #f3b562;
   font-weight: inherit;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.33;
   text-transform: uppercase;
 }
@@ -590,15 +625,21 @@ ul {
   margin-bottom: 40px;
   color: #647b64;
   font-weight: 500;
-  font-size: 36px;
+  font-size: 32px;
   line-height: 1.33;
   text-transform: uppercase;
 }
 
 .section__text {
-  width: 445px;
+  max-width: 372px;
   margin-bottom: 40px;
   line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+@media screen and (min-width: 768px) {
+  .section__text {
+    width: 500px;
+  }
 }
 
 .team {

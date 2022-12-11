@@ -2,24 +2,39 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 112px;
+  padding-top: 108px;
+  padding-bottom: 80px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 24px;
+  }
 }
 
 .hero__content {
-  width: 500px;
+  max-width: 372px;
+
+  @media screen and (min-width: $tablet) {
+    width: 500px;
+  }
 }
 .hero__title {
-  margin-bottom: 24px;
+  margin-bottom: 40px;
   color: $secondary-text-color;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 32px;
   line-height: 1.33;
   text-transform: uppercase;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
 }
 
 .hero__descr {
   margin-bottom: 40px;
   line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 
 .hero__image {
