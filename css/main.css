@@ -289,6 +289,10 @@ ul {
   line-height: 1.5;
 }
 
+.footer {
+  background-color: #f0dcc5;
+}
+
 .header {
   padding-top: 48px;
   padding-bottom: 32px;
