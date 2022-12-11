@@ -16,9 +16,29 @@
   flex-grow: 1;
 }
 
+.header__burger-menu {
+  padding: 10px 0;
+  border: none;
+  cursor: pointer;
+  fill: $icon-burger-menu-color;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
 .header__menu {
-  display: flex;
+  display: none;
+  align-items: center;
   gap: 40px;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
 }
 
 .header__link {

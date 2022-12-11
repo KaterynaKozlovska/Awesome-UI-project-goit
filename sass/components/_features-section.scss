@@ -1,6 +1,11 @@
 .features__list {
   display: flex;
+  flex-direction: column;
   gap: 44px;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+  }
 }
 
 .features__item {

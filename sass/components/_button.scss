@@ -32,8 +32,13 @@
 }
 
 .header__button {
+  display: none;
   padding: 12px 16px;
 
   border-radius: 3px;
   border-style: none;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
 }
