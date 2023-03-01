@@ -14,15 +14,15 @@
   padding: 64px 50px 59px;
   margin-bottom: 64px;
 
-  fill: $brand-color;
-  background-color: $white-color;
+  fill: var(--brand-color);
+  background-color: var(--white-color);
   border-radius: 8px;
 }
 
 .features__item--brand-color {
-  fill: $white-color;
-  color: $white-color;
-  background-color: $brand-color;
+  fill: var(--white-color);
+  color: var(--white-color);
+  background-color: var(--brand-color);
 }
 .features__icon {
   margin-bottom: 32px;

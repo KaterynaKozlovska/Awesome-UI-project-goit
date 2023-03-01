@@ -9,7 +9,7 @@
   padding: 48px 40px;
   display: none;
 
-  background-color: $white-color;
+  background-color: var(--white-color);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
     0px 1px 3px rgba(0, 0, 0, 0.16);
 
@@ -34,8 +34,8 @@
     width: 40px;
     height: 40px;
 
-    color: $primary-text-color;
-    background-color: $white-color;
+    color: var(--primary-text-color);
+    background-color: var(--white-color);
     border: none;
 
     fill: currentColor;
@@ -47,7 +47,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
-      fill: $accent-color;
+      fill: var(--accent-color);
     }
   }
 
@@ -70,7 +70,7 @@
     letter-spacing: 0.02em;
     text-decoration: none;
 
-    color: $primary-text-color;
+    color: var(--primary-text-color);
 
     transition-property: fill;
     transition-duration: 250ms;
@@ -82,11 +82,11 @@
 
     &:hover,
     &:focus {
-      color: $accent-color;
+      color: var(--accent-color);
     }
 
     &--current {
-      color: $accent-color;
+      color: var(--accent-color);
       margin-bottom: 36px;
     }
   }
@@ -99,7 +99,7 @@
   }
   &__tel {
     font-size: 30px;
-    color: $accent-color;
+    color: var(--accent-color);
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -110,13 +110,13 @@
 
     &:hover,
     &:focus {
-      color: $secondary-text-color;
+      color: var(--secondary-text-color);
     }
   }
 
   &__mail {
     font-size: 20px;
-    color: $secondary-text-color;
+    color: var(--secondary-text-color);
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -127,7 +127,7 @@
 
     &:hover,
     &:focus {
-      color: $accent-color;
+      color: var(--accent-color);
     }
   }
 
@@ -146,7 +146,7 @@
     font-size: 12px;
     line-height: 1.22;
 
-    color: $accent-color;
+    color: var(--accent-color);
 
     transition-property: fill;
     transition-duration: 250ms;
@@ -158,7 +158,7 @@
 
     &:hover,
     &:focus {
-      color: $secondary-text-color;
+      color: var(--secondary-text-color);
     }
   }
 }

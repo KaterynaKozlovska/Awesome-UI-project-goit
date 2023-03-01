@@ -1,11 +1,19 @@
-$primary-text-color: #4f4f4f;
-$secondary-text-color: #333333;
-$brand-color: #647b64;
-$accent-color: #f3b562;
-$white-color: #fefefe;
-$primary-backgroud-color: #f3f1ee;
-$icon-burger-menu-color: #222b45;
-$backgroung-footer-color: #f0dcc5;
+:root {
+  --primary-text-color: #4f4f4f;
+  --secondary-text-color: #333333;
+  --brand-color: #647b64;
+  --accent-color: #f3b562;
+  --white-color: #fefefe;
+  --primary-backgroud-color: #f3f1ee;
+  --icon-burger-menu-color: #222b45;
+  --backgroung-footer-color: #f0dcc5;
+  --decor-gradient: linear-gradient(
+    164.26deg,
+    rgba(228, 115, 34, 0) -335.51%,
+    rgba(239, 128, 49, 0.15) -20.24%,
+    rgba(229, 116, 35, 0) 119.45%
+  );
+}
 
 $mobile: 420px;
 $tablet: 768px;

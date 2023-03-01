@@ -15,16 +15,16 @@
   justify-content: space-between;
   flex-grow: 1;
 
-  @media screen and (min-width: $mobile) {
-    gap: 122px;
-  }
+  // @media screen and (max-width: $mobile) {
+  //   gap: 122px;
+  // }
 }
 
 .header__burger-menu {
   padding: 10px 0;
   border: none;
   cursor: pointer;
-  fill: $icon-burger-menu-color;
+  fill: var(--icon-burger-menu-color);
 
   @media screen and (min-width: $tablet) {
     display: none;
@@ -48,7 +48,7 @@
 .header__link {
   padding: 12px 0;
 
-  color: $secondary-text-color;
+  color: var(--secondary-text-color);
   line-height: 1.5;
   text-decoration: none;
 

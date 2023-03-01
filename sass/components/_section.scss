@@ -1,10 +1,9 @@
 .section__title {
-
   margin-bottom: 8px;
 
-  color: $accent-color;
+  color: var(--accent-color);
   font-weight: inherit;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 1.33;
   text-transform: uppercase;
 }
@@ -13,19 +12,19 @@
   display: block;
   margin-bottom: 40px;
 
-  color: $brand-color;
+  color: var(--brand-color);
   font-weight: 500;
-  font-size: 32px;
+  font-size: 36px;
   line-height: 1.33;
   text-transform: uppercase;
 }
 
 .section__text {
-  max-width: 372px;
+  width: 460px;
 
-  @media screen and (min-width: $tablet) {
-    width: 500px;
-  }
+  // @media screen and (min-width: $tablet) {
+  //   width: 500px;
+  // }
   margin-bottom: 40px;
 
   line-height: 1.5;

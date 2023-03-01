@@ -11,14 +11,14 @@
 .team__card {
   position: relative;
   padding: 24px 32px;
-  background-color: $white-color;
+  background-color: var(--white-color);
   border-radius: 8px;
 }
 .team__title {
   position: absolute;
   top: 24px;
   left: 184px;
-  color: $secondary-text-color;
+  color: var(--secondary-text-color);
   font-weight: 500;
   line-height: 1.5;
 }
