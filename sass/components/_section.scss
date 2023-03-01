@@ -20,11 +20,12 @@
 }
 
 .section__text {
-  width: 460px;
-
-  // @media screen and (min-width: $tablet) {
-  //   width: 500px;
-  // }
+  @media screen and (min-width: $tablet) {
+    width: 320px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 460px;
+  }
   margin-bottom: 40px;
 
   line-height: 1.5;
