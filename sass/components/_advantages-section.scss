@@ -14,24 +14,17 @@
     content: '';
   }
   &__container {
-    // flex-direction: column;
     @media screen and (min-width: $tablet) {
       display: flex;
       gap: 50px;
     }
 
     @media screen and (min-width: $desktop) {
-      // flex-direction: row;
       gap: 100px;
-      // justify-content: flex-end;
     }
   }
 
   &__content {
     margin-bottom: 48px;
-
-    // @media screen and (min-width: $tablet) {
-    //   width: 460px;
-    // }
   }
 }

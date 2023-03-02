@@ -1,3 +1,32 @@
+.features {
+  position: relative;
+  padding: 64px 0 32px;
+}
+
+.features::before {
+  position: absolute;
+  z-index: -1;
+  bottom: 0px;
+  right: 0;
+  width: 600px;
+  height: 160px;
+  background-image: var(--decor-gradient);
+  transform: rotate(180deg);
+  content: '';
+}
+
+.features::after {
+  position: absolute;
+  z-index: -1;
+  bottom: 0px;
+  left: 0;
+  width: 224px;
+  height: 224px;
+  background-image: url('../images/decor-dots.png');
+  transform: rotate(180deg);
+  content: '';
+}
+
 .features__list {
   display: flex;
   flex-direction: column;
@@ -9,14 +38,17 @@
 }
 
 .features__item {
-  width: 360px;
   max-height: 338px;
   padding: 64px 50px 59px;
-  margin-bottom: 64px;
 
   fill: var(--brand-color);
+
   background-color: var(--white-color);
   border-radius: 8px;
+
+  @media screen and (min-width: $tablet) {
+    width: 360px;
+  }
 }
 
 .features__item--brand-color {
