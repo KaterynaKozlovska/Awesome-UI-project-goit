@@ -1,4 +1,9 @@
+.about {
+  padding: 96px 0 44px;
+}
+
 .about__container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -11,5 +16,32 @@
 
 .about__image {
   display: block;
-  margin-bottom: 128px;
+  margin-bottom: 50px;
+  width: 370px;
+  height: 330px;
+
+  @media screen and (min-width: $desktop) {
+    width: 570px;
+    height: 530px;
+  }
+}
+
+.about__container::before {
+  position: absolute;
+  z-index: -1;
+  top: 46px;
+  left: 86px;
+  width: 370px;
+  height: 330px;
+  background-image: var(--decor-gradient);
+  transform: rotate(180deg);
+  content: '';
+
+  @media screen and (min-width: $tablet) {
+    top: 66px;
+    left: 56px;
+  }
+  @media screen and (min-width: $desktop) {
+    top: 40px;
+  }
 }
